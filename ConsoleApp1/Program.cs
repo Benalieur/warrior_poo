@@ -25,7 +25,7 @@ namespace ConsoleApp1
             }*/
 
             Random rd = new Random();
-            int numberPlayersTeam = 2;
+            int numberPlayersTeam = 3;
 
             Team team1 = new Team(rd, "Bleue", ConsoleColor.Blue, numberPlayersTeam);
             Team team2 = new Team(rd, "Verte", ConsoleColor.Green, numberPlayersTeam);

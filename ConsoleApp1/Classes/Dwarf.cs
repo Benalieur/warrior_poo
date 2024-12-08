@@ -39,7 +39,7 @@ namespace ConsoleApp1
                     Console.WriteLine($"{Name} a perdu {newDamage} pv, il lui reste actuellement {Hp} pv !");
                 } else
                 {
-                    Console.WriteLine($"{Name} n'a perdu aucun pv !\n");
+                    Console.WriteLine($"{Name} n'a perdu aucun pv !");
                 }
             }
             else

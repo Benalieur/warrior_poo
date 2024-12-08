@@ -28,17 +28,17 @@ namespace ConsoleApp1.Classes
 
                 if (selectedCharacter == 0)
                 {
-                    Warrior w = new Warrior($"Guerrier_{i}", rd.Next(110, 151), rd.Next(1, 7));
+                    Warrior w = new Warrior($"Team {Name} - Guerrier_{i}", rd.Next(110, 151), rd.Next(1, 7));
                     warriors.Add(w);
                 }
                 else if (selectedCharacter == 1)
                 {
-                    Warrior w = new Dwarf($"Nain_{i}", rd.Next(70, 121), rd.Next(1, 7), rd.Next(1, 4));
+                    Warrior w = new Dwarf($"Team {Name} - Nain_{i}", rd.Next(70, 121), rd.Next(1, 7), rd.Next(1, 4));
                     warriors.Add(w);
                 }
                 else if (selectedCharacter == 2)
                 {
-                    Warrior w = new Elf($"Elfe_{i}", rd.Next(50, 101), rd.Next(1, 7), rd.Next(1, 7));
+                    Warrior w = new Elf($"Team {Name} - Elfe_{i}", rd.Next(50, 101), rd.Next(1, 7), rd.Next(1, 7));
                     warriors.Add(w);
                 }
             }
@@ -81,6 +81,7 @@ namespace ConsoleApp1.Classes
         {
             Console.ForegroundColor = teamColor;
             Console.WriteLine($"\nL'équipe {Name} joue :");
+            Console.ResetColor();
 
             foreach (Warrior warrior in warriors)
             {
@@ -96,7 +97,6 @@ namespace ConsoleApp1.Classes
                     }
                 }
             }
-            Console.ResetColor();
         }
 
         public void GetInfos()
