@@ -19,6 +19,12 @@ namespace ConsoleApp1
         }
 
         // Propriétés
+        public bool IsAlive
+        {
+            get { return isAlive; }
+            protected set { isAlive = value; }
+        }
+
         public string Name
         {
             get { return name; }
@@ -67,16 +73,10 @@ namespace ConsoleApp1
             }
         }
 
-        public bool IsAlive
-        {
-            get { return isAlive; }
-            protected set { isAlive = value; }
-        }
-
         // Méthodes
         public virtual void GetInfos ()
         {
-            Console.WriteLine($"{Name} possède {NumberOfAttacks} attaques et {Hp} pv !\n");
+            Console.WriteLine($"{Name} possède {NumberOfAttacks} attaques et {Hp} pv !");
         }
 
         public virtual void TakeDamage (int damage)
@@ -84,7 +84,7 @@ namespace ConsoleApp1
             if (Hp - damage > 0)
             {
                 Hp -= damage;
-                Console.WriteLine($"{Name} a perdu {damage} pv, il lui reste actuellement {Hp} pv !\n");
+                Console.WriteLine($"{Name} a perdu {damage} pv, il lui reste actuellement {Hp} pv !");
             }
             else
             {

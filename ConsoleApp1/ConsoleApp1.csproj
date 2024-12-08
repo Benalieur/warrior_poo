@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Dwarf.cs" />
     <Compile Include="Classes\Elf.cs" />
+    <Compile Include="Classes\Team.cs" />
     <Compile Include="Classes\Warrior.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

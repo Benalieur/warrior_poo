@@ -24,7 +24,7 @@ namespace ConsoleApp1
         // Méthodes
         public override void GetInfos()
         {
-            Console.WriteLine($"{Name} possède {NumberOfAttacks} attaques, {Hp} pv et {NumberOfShield} points d'armure !\n");
+            Console.WriteLine($"{Name} possède {NumberOfAttacks} attaques, {Hp} pv et {NumberOfShield} points d'armure !");
         }
 
         public override void TakeDamage(int damage)
@@ -36,7 +36,7 @@ namespace ConsoleApp1
                 if (newDamage > 0)
                 {
                     Hp -= newDamage;
-                    Console.WriteLine($"{Name} a perdu {newDamage} pv, il lui reste actuellement {Hp} pv !\n");
+                    Console.WriteLine($"{Name} a perdu {newDamage} pv, il lui reste actuellement {Hp} pv !");
                 } else
                 {
                     Console.WriteLine($"{Name} n'a perdu aucun pv !\n");

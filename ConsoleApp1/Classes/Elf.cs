@@ -29,7 +29,7 @@ namespace ConsoleApp1
         // Méthodes
         public override void GetInfos()
         {
-            Console.WriteLine($"{Name} possède {base.NumberOfAttacks} attaques, {Hp} pv et {NumberOfBonus} points d'attaque supplémentaires !\n");
+            Console.WriteLine($"{Name} possède {base.NumberOfAttacks} attaques, {Hp} pv et {NumberOfBonus} points d'attaque supplémentaires !");
         }
     }
 }
